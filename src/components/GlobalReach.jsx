@@ -45,7 +45,7 @@ export default function GlobalReach() {
               {locations.map(({ title, desc }) => (
                 <li key={title} className="flex items-start gap-5">
                   <div className="bg-primary/5 rounded-full p-2.5 flex-shrink-0 text-accent">
-                    <span className="material-symbols-outlined block" style={{ fontSize: '26px' }}>
+                    <span className="material-symbols-outlined block" style={{ fontSize: '26px' }} translate="no">
                       location_on
                     </span>
                   </div>

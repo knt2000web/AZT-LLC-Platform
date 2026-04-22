@@ -44,7 +44,7 @@ export default function Difference() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 md:gap-12">
             {pillars.map(({ icon, title, desc }) => (
               <div key={title} className="space-y-3">
-                <span className="material-icons text-4xl text-primary border border-accent p-2 inline-block">
+                <span className="material-icons text-4xl text-primary border border-accent p-2 inline-block" translate="no">
                   {icon}
                 </span>
                 <h3 className="text-sm font-black uppercase tracking-tight text-primary">{title}</h3>

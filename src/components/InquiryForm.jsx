@@ -63,6 +63,7 @@ export default function InquiryForm() {
           <div className="absolute top-8 right-8 hidden sm:block pointer-events-none">
             <span
               className="material-symbols-outlined text-primary/8 select-none"
+              translate="no"
               style={{ fontSize: '96px', fontVariationSettings: "'FILL' 0,'wght' 200,'GRAD' 0,'opsz' 48" }}
             >
               encrypted
@@ -170,6 +171,7 @@ export default function InquiryForm() {
               <div className="flex items-start gap-3 text-[10px] text-secondary uppercase font-semibold leading-tight max-w-sm">
                 <span
                   className="material-symbols-outlined text-primary flex-shrink-0 mt-0.5"
+                  translate="no"
                   style={{ fontSize: '16px', fontVariationSettings: "'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 16" }}
                 >
                   security
