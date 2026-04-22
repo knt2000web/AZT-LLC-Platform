@@ -1,0 +1,71 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+/* ── Tailwind v4: Custom Design Tokens via CSS @theme ── */
+@theme {
+  --color-primary:           #0A1F33;
+  --color-accent:            #C0C6CC;
+  --color-secondary:         #515f74;
+  --color-surface:           #f8f9fa;
+  --color-surface-container: #edeeef;
+
+  --font-family-sans:     'Montserrat', sans-serif;
+  --font-family-headline: 'Montserrat', sans-serif;
+
+  --border-radius-DEFAULT: 0px;
+  --border-radius-sm:      0px;
+  --border-radius-md:      2px;
+  --border-radius-lg:      2px;
+  --border-radius-xl:      2px;
+}
+
+/* ── Base resets ── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html { 
+  scroll-behavior: smooth; 
+  scroll-padding-top: 68px; /* Offset for fixed navbar */
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f8f9fa;
+  color: #0A1F33;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: #0A1F33;
+  color: #fff;
+}
+
+/* ── Custom utility classes ── */
+@layer utilities {
+  .text-shadow-sm {
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55);
+  }
+
+  .section-label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    color: #C0C6CC;
+    margin-bottom: 1.5rem;
+  }
+
+  .nav-link {
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    color: #C0C6CC;
+    transition: color 0.2s;
+  }
+
+  .nav-link:hover {
+    color: #ffffff;
+  }
+}
