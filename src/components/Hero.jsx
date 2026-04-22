@@ -43,7 +43,7 @@ export default function Hero() {
           {/* CTA */}
           <div className="flex gap-4 pt-4">
             <a
-              href="#domains"
+              href="#capabilities"
               className="border border-accent text-white hover:bg-white hover:text-primary px-8 py-4 font-black tracking-widest uppercase text-xs transition-all duration-300"
             >
               View Capabilities
@@ -58,7 +58,7 @@ export default function Hero() {
         </div>
 
         {/* Stats column */}
-        <div className="hidden md:flex flex-col gap-6 items-end">
+        <div className="grid grid-cols-1 gap-4">
           {[
             { value: '45+', label: 'Operational Theaters' },
             { value: '20+', label: 'Years Combined Experience' },
@@ -66,19 +66,17 @@ export default function Hero() {
           ].map(({ value, label }) => (
             <div
               key={label}
-              className="border border-accent/30 bg-primary/40 backdrop-blur-sm px-10 py-6 text-right w-64"
+              className="border border-accent/30 bg-white/5 backdrop-blur-sm p-8 text-right"
             >
-              <p className="text-white text-4xl font-black mb-1">{value}</p>
-              <p className="text-accent text-[10px] uppercase tracking-widest font-semibold">
-                {label}
-              </p>
+              <p className="text-white text-5xl font-black tracking-tighter">{value}</p>
+              <p className="text-accent/70 text-[10px] uppercase tracking-widest font-semibold mt-1">{label}</p>
             </div>
           ))}
         </div>
       </div>
 
       {/* Bottom fade */}
-      <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-surface to-transparent z-10" />
+      <div className="absolute bottom-0 inset-x-0 h-32 bg-gradient-to-t from-primary to-transparent z-10" />
     </header>
   );
 }
