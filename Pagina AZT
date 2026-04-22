@@ -10,7 +10,8 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center space-x-3">
-              <Shield className="w-8 h-8 text-azt-silver" />
+              {/* LOGO INYECTADO AQUÍ */}
+              <img src="./AZT_LLC_LOGO.png" alt="AZT LLC Logo" className="w-10 h-10 object-contain" />
               <span className="font-bold text-2xl text-white tracking-widest">AZT LLC</span>
             </div>
             <div className="hidden md:flex space-x-8">
@@ -29,7 +30,8 @@ export default function App() {
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-azt-navy-dark">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1544839846-59a60e0d5a3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2670&q=80')] bg-cover bg-center opacity-10 mix-blend-luminosity"></div>
+        {/* IMAGEN DE FONDO LOCAL INYECTADA AQUÍ */}
+        <div className="absolute inset-0 bg-[url('./hangar_y_avion.jpg')] bg-cover bg-center opacity-10 mix-blend-luminosity"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-azt-navy-dark via-azt-navy/80 to-transparent"></div>
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
@@ -76,8 +78,9 @@ export default function App() {
               whileHover={{ y: -5 }}
               className="group relative overflow-hidden bg-azt-navy-dark border border-azt-silver/10 h-96 flex flex-col justify-end"
             >
+              {/* IMAGEN DE AVIACIÓN LOCAL INYECTADA AQUÍ */}
               <img 
-                src="https://images.unsplash.com/photo-1544839846-59a60e0d5a3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2670&q=80" 
+                src="./hangar_y_avion.jpg" 
                 alt="Special Mission Aircraft" 
                 className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700 grayscale mix-blend-luminosity"
               />
@@ -91,7 +94,7 @@ export default function App() {
               </div>
             </motion.div>
 
-            {/* Defense */}
+            {/* Defense (Mantiene Unsplash hasta que tengas fotos locales) */}
             <motion.div 
               whileHover={{ y: -5 }}
               className="group relative overflow-hidden bg-azt-navy-dark border border-azt-silver/10 h-96 flex flex-col justify-end"
@@ -111,7 +114,7 @@ export default function App() {
               </div>
             </motion.div>
 
-            {/* Maritime */}
+            {/* Maritime (Mantiene Unsplash hasta que tengas fotos locales) */}
             <motion.div 
               whileHover={{ y: -5 }}
               className="group relative overflow-hidden bg-azt-navy-dark border border-azt-silver/10 h-96 flex flex-col justify-end"
@@ -181,7 +184,8 @@ export default function App() {
       <footer className="bg-azt-navy border-t border-azt-silver/20 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center space-x-2 mb-4 md:mb-0">
-            <Shield className="w-6 h-6 text-azt-silver" />
+            {/* LOGO INYECTADO AQUÍ */}
+            <img src="./AZT_LLC_LOGO.png" alt="AZT LLC Logo" className="w-8 h-8 object-contain" />
             <span className="font-bold text-xl text-white tracking-widest">AZT LLC</span>
           </div>
           <div className="text-sm text-azt-silver text-center md:text-right">
@@ -194,4 +198,3 @@ export default function App() {
     </div>
   );
 }
-
