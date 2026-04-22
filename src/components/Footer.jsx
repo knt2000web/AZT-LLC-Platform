@@ -57,7 +57,7 @@ export default function Footer() {
             <ul className="text-xs space-y-2 font-medium">
               {resources.map((r) => (
                 <li key={r}>
-                  <a href="#" className="hover:text-white transition-colors">{r}</a>
+                  <a href="#about" className="hover:text-white transition-colors">{r}</a>
                 </li>
               ))}
             </ul>

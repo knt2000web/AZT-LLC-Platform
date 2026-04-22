@@ -42,6 +42,15 @@ body {
 
 /* ── Custom utility classes ── */
 @layer utilities {
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-33.3333%); } /* Since we duplicated array 3 times */
+  }
+
+  .animate-marquee {
+    width: max-content;
+    animation: marquee 25s linear infinite;
+  }
   .text-shadow-sm {
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55);
   }

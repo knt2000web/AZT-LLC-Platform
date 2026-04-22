@@ -84,7 +84,7 @@ export default function InquiryForm() {
           {status === 'success' && (
             <div className="mb-10 border border-green-400/40 bg-green-50 p-6">
               <p className="text-sm font-black uppercase tracking-widest text-green-700 mb-1">
-                Transmission Received
+                ¡Mensaje Recibido!
               </p>
               <p className="text-xs text-green-600 leading-relaxed">
                 Your inquiry has been transmitted and logged securely. An AZT executive will contact
@@ -185,10 +185,10 @@ export default function InquiryForm() {
                 {status === 'submitting' ? (
                   <>
                     <span className="w-3 h-3 border border-white/50 border-t-white rounded-full animate-spin" />
-                    Processing...
+                    Enviando...
                   </>
                 ) : (
-                  'Initialize Request'
+                  'Enviar Solicitud'
                 )}
               </button>
             </div>
