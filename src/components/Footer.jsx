@@ -16,7 +16,7 @@ export default function Footer() {
               style={{ imageRendering: '-webkit-optimize-contrast', filter: 'brightness(0) invert(1)' }}
             />
             <p className="text-[10px] leading-relaxed uppercase tracking-widest font-black text-white">
-              AZ Trading LLC
+              AZT LLC
             </p>
             <p className="text-[10px] leading-relaxed uppercase tracking-widest font-medium opacity-50">
               Strategic Solutions,<br />Powered by Global Expertise.
@@ -30,10 +30,10 @@ export default function Footer() {
               <p>2380 Diana Dr,<br />Hallandale Beach, FL 33009, USA</p>
               <p className="font-black text-white">+1 (954) 683-9458</p>
               <a
-                href="mailto:aztradingpower@outlook.com"
+                href="mailto:info@aztllc.com"
                 className="text-accent hover:text-white transition-colors underline decoration-accent/30 block"
               >
-                aztradingpower@outlook.com
+                info@aztllc.com
               </a>
             </div>
           </div>
@@ -45,7 +45,7 @@ export default function Footer() {
               {certs.map((c) => (
                 <li key={c} className="flex items-center gap-2.5">
                   <span className="w-1.5 h-1.5 bg-accent flex-shrink-0" />
-                  {c}
+                  <a href="#about" className="hover:text-white transition-colors">{c}</a>
                 </li>
               ))}
             </ul>
@@ -62,7 +62,7 @@ export default function Footer() {
               ))}
             </ul>
             {/* LinkedIn */}
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="inline-block mt-4 text-accent hover:text-white transition-colors">
+            <a href="https://linkedin.com/company/azt-llc" target="_blank" rel="noopener noreferrer" className="inline-block mt-4 text-accent hover:text-white transition-colors">
               <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
               </svg>
@@ -73,7 +73,7 @@ export default function Footer() {
         {/* Legal bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col items-center gap-3">
           <p className="text-[9px] uppercase tracking-widest opacity-40 text-center">
-            © {new Date().getFullYear()} AZ Trading LLC. All Rights Reserved. ITAR Compliant.
+            © {new Date().getFullYear()} AZT LLC. All Rights Reserved. ITAR Compliant.
           </p>
           <p className="text-[9px] uppercase tracking-wider opacity-30 text-center max-w-2xl leading-loose">
             AZT LLC operates in strict accordance with ITAR and EAR regulations. All strategic programs

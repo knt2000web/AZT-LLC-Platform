@@ -9,7 +9,7 @@ const steps = [
 
 export default function Methodology() {
   return (
-    <section id="execution-model" className="bg-white py-24 md:py-36 border-y border-accent/20">
+    <section id="execution-model" className="bg-white py-16 md:py-24 border-y border-accent/20">
       <div className="max-w-screen-2xl mx-auto px-6 md:px-12">
         <div className="text-center mb-20">
           <span className="section-label">Methodology</span>

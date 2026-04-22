@@ -27,7 +27,7 @@ const domains = [
 
 export default function Domains() {
   return (
-    <section id="capabilities" className="bg-surface-container py-24 md:py-36 border-t border-accent/20">
+    <section id="capabilities" className="bg-surface-container py-16 md:py-24 border-t border-accent/20">
       <div className="max-w-screen-2xl mx-auto px-6 md:px-12">
 
         {/* Header */}
@@ -38,9 +38,9 @@ export default function Domains() {
               Core Capability Domains
             </h2>
           </div>
-          <button className="text-xs font-black uppercase border-b-2 border-primary pb-1 tracking-widest">
+          <a href="#capabilities" className="text-xs font-black uppercase border-b-2 border-primary pb-1 tracking-widest hover:text-primary/70 transition-colors">
             All Capabilities
-          </button>
+          </a>
         </div>
 
         {/* Cards */}
@@ -57,10 +57,10 @@ export default function Domains() {
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/30 to-transparent opacity-90" />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/60 to-transparent opacity-90" />
               <div className="absolute bottom-0 left-0 p-6 md:p-8 w-full">
                 <h3 className="text-white text-lg font-black uppercase mb-2 tracking-tight">{title}</h3>
-                <p className="text-white/70 text-xs leading-relaxed transform translate-y-4 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                <p className="text-white/90 text-xs leading-relaxed transform transition-all duration-300">
                   {desc}
                 </p>
               </div>

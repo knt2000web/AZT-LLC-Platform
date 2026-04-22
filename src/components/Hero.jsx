@@ -12,15 +12,15 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-screen-2xl mx-auto px-6 md:px-12 py-24 md:py-36 grid grid-cols-1 md:grid-cols-2 gap-16 w-full items-center">
+      <div className="relative z-10 max-w-screen-2xl mx-auto px-6 md:px-12 py-16 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-16 w-full items-center">
         <div className="space-y-8">
           {/* Kicker */}
           <p className="section-label">
-            AZ Trading LLC — Integrated Defense Solutions
+            AZT LLC — Integrated Defense Solutions
           </p>
 
           {/* Headline */}
-          <h1 className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-[1.05] tracking-tighter uppercase text-shadow-sm">
+          <h1 className="text-white text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-black leading-[1.05] tracking-tighter uppercase text-shadow-sm">
             Strategic Solutions,{' '}
             <br />
             <span className="text-accent">Powered by Global Expertise.</span>
