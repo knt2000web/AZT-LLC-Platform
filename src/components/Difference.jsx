@@ -1,6 +1,6 @@
 const pillars = [
   {
-    icon: 'hub',
+    icon: 'device_hub',
     title: 'Unified Coordination',
     desc: 'Centralizing complex procurement and logistics under a single executive oversight framework.',
   },
@@ -44,10 +44,7 @@ export default function Difference() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 md:gap-12">
             {pillars.map(({ icon, title, desc }) => (
               <div key={title} className="space-y-3">
-                <span
-                  className="material-symbols-outlined text-4xl text-primary border border-accent p-2 inline-block"
-                  style={{ fontVariationSettings: "'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24" }}
-                >
+                <span className="material-icons text-4xl text-primary border border-accent p-2 inline-block">
                   {icon}
                 </span>
                 <h3 className="text-sm font-black uppercase tracking-tight text-primary">{title}</h3>

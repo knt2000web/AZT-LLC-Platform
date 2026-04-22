@@ -9,12 +9,14 @@ export default function Footer() {
 
           {/* Identity */}
           <div className="space-y-5">
-            <img
-              src="/AZT_LLC_LOGO.png"
-              alt="AZT LLC"
-              className="h-auto max-w-[180px] object-contain"
-              style={{ imageRendering: '-webkit-optimize-contrast', filter: 'invert(1)', mixBlendMode: 'screen' }}
-            />
+            <div className="bg-white inline-block px-4 py-2.5 rounded-sm shadow-sm">
+              <img
+                src="/AZT_LLC_LOGO.png"
+                alt="AZT LLC"
+                className="h-auto max-w-[130px] object-contain"
+                style={{ imageRendering: '-webkit-optimize-contrast' }}
+              />
+            </div>
             <p className="text-[10px] leading-relaxed uppercase tracking-widest font-black text-white">
               AZT LLC
             </p>
