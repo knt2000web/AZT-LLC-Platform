@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AERO-INSTITUTIONAL | AZT LLC</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed-variant": "#394760",
+                        "outline": "#75777e",
+                        "primary-fixed-dim": "#b9c7e4",
+                        "tertiary-fixed-dim": "#f0bba8",
+                        "tertiary-fixed": "#ffdbcf",
+                        "on-tertiary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "secondary": "#515f74",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-tertiary-fixed": "#301409",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed-variant": "#3a485b",
+                        "surface-container-high": "#e7e8e9",
+                        "inverse-surface": "#2e3132",
+                        "secondary-fixed-dim": "#b9c7df",
+                        "inverse-primary": "#b9c7e4",
+                        "on-surface": "#191c1d",
+                        "secondary-fixed": "#d5e3fc",
+                        "tertiary": "#000000",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "on-background": "#191c1d",
+                        "on-surface-variant": "#44474d",
+                        "on-error": "#ffffff",
+                        "surface-container-low": "#f3f4f5",
+                        "on-error-container": "#93000a",
+                        "on-secondary-container": "#57657a",
+                        "surface-container": "#edeeef",
+                        "on-tertiary-container": "#a77969",
+                        "surface-variant": "#e1e3e4",
+                        "on-tertiary-fixed-variant": "#633e30",
+                        "surface-bright": "#f8f9fa",
+                        "error": "#ba1a1a",
+                        "secondary-container": "#d5e3fc",
+                        "on-secondary-fixed": "#0d1c2e",
+                        "primary-container": "#0d1c32",
+                        "surface": "#f8f9fa",
+                        "outline-variant": "#c5c6cd",
+                        "inverse-on-surface": "#f0f1f2",
+                        "surface-tint": "#515f78",
+                        "on-primary-container": "#76849f",
+                        "primary": "#000000",
+                        "primary-fixed": "#d6e3ff",
+                        "background": "#f8f9fa",
+                        "surface-dim": "#d9dadb",
+                        "on-primary-fixed": "#0d1c32",
+                        "tertiary-container": "#301409"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "sm": "0px",
+                        "md": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "2xl": "2px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        .grayscale-filter { filter: grayscale(100%) opacity(0.5); transition: filter 0.3s ease, opacity 0.3s ease; }
+        .grayscale-filter:hover { filter: grayscale(0%) opacity(1); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-white">
+<!-- Top Navigation Bar -->
+<nav class="bg-[#F8F9FA] dark:bg-[#041329] w-full top-0 left-0 border-none fixed z-50">
+<div class="flex justify-between items-center w-full px-6 md:px-12 py-6 max-w-[1920px] mx-auto">
+<div class="flex items-center gap-3">
+<div class="bg-black dark:bg-white p-1.5">
+<span class="material-symbols-outlined text-white dark:text-black text-xl" style="font-variation-settings: 'FILL' 1;">shield_with_house</span>
+</div>
+<div class="text-xl font-black text-black dark:text-white tracking-tighter uppercase">
+        AZT LLC
+    </div>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-['Inter'] font-semibold tracking-tight uppercase text-xs text-[#515F74] dark:text-[#C5C6CD] hover:text-black dark:hover:text-white transition-colors" href="#">Capabilities</a>
+<a class="font-['Inter'] font-semibold tracking-tight uppercase text-xs text-[#515F74] dark:text-[#C5C6CD] hover:text-black dark:hover:text-white transition-colors" href="#">Solutions</a>
+<a class="font-['Inter'] font-semibold tracking-tight uppercase text-xs text-[#515F74] dark:text-[#C5C6CD] hover:text-black dark:hover:text-white transition-colors" href="#">Global Reach</a>
+<a class="font-['Inter'] font-semibold tracking-tight uppercase text-xs text-[#515F74] dark:text-[#C5C6CD] hover:text-black dark:hover:text-white transition-colors" href="#">About Us</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-primary-container text-white px-6 py-2 font-['Inter'] font-semibold tracking-tight uppercase text-xs active:scale-95 transition-transform duration-150">
+                Contact Us
+            </button>
+</div>
+</div>
+<div class="bg-[#F3F4F5] dark:bg-[#0D1C32] h-[1px] w-full"></div>
+</nav>
+<!-- Hero Section -->
+<header class="relative min-h-screen flex items-center pt-24 overflow-hidden bg-primary-container">
+<div class="absolute inset-0 z-0">
+<img alt="" class="w-full h-full object-cover opacity-40 mix-blend-overlay" data-alt="Close-up technical view of a high-performance aerospace engine component with precise metallic textures and deep blue dramatic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZNWlQJaIsQkLkG_BgHx1NhvoRYpGE9mUrXzFi7gc_lwPzpztGLqvK9nJb-WjAgQCQl5OkJPzoeZTSzgSUP8SWHQV4kNunZNMlYdJElHErzJ4WRWJFfZGGVhohpBkIPg6j2RFPlhZhiJVPJ9qgLfNH1vWMBAH0TPWe3sRvnIg580AfydEKV_uJjlHJh3JZtwWeqVeziCatI71DEmtajKuGvnyQshsjD6TXSLVg_gxSlYZeAFRqqu0imcLZuW48mtybGA2VXnIceA-I"/>
+<div class="absolute inset-0 bg-gradient-to-br from-[#041329] via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-[1920px] mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-12 w-full">
+<div class="space-y-8">
+<h1 class="text-white text-5xl md:text-7xl font-black leading-[1.1] tracking-tighter uppercase">
+                STRATEGIC SOLUTIONS, <br/>
+<span class="text-on-primary-container">POWERED BY GLOBAL EXPERTISE.</span>
+</h1>
+<p class="text-on-primary-container text-xl md:text-2xl font-light leading-relaxed max-w-xl">
+                Delivering integrated capability programs for government, commercial, and humanitarian sectors worldwide.
+            </p>
+<div class="border-l-4 border-on-primary-container pl-6 py-2">
+<p class="text-white text-lg font-medium italic opacity-90">
+                    "We don’t just supply equipment; we assemble entire operational ecosystems into turnkey working solutions."
+                </p>
+</div>
+<div class="pt-6">
+<button class="border border-white/30 text-white hover:bg-white hover:text-primary-container px-10 py-4 font-semibold tracking-widest uppercase text-sm transition-all duration-300">
+                    VIEW CAPABILITIES
+                </button>
+</div>
+</div>
+</div>
+</header>
+<!-- OEM/Partner Strip -->
+<section class="bg-surface py-8 border-b border-outline-variant/20">
+<div class="max-w-[1920px] mx-auto px-12">
+<div class="flex justify-center items-center gap-4 text-[9px] font-bold uppercase tracking-[0.25em] text-[#94A3B8]">
+<span>GLOBAL LOGISTICS</span>
+<span class="text-[#CBD5E1]">|</span>
+<span>AERO-TECH SYSTEMS</span>
+<span class="text-[#CBD5E1]">|</span>
+<span>SECURE MARITIME</span>
+<span class="text-[#CBD5E1]">|</span>
+<span>DEFENSE-LINK</span>
+<span class="text-[#CBD5E1]">|</span>
+<span>PRECISION ENG</span>
+</div>
+</div>
+</section>
+<!-- The AZT Difference -->
+<section class="bg-surface-container-lowest py-32">
+<div class="max-w-[1920px] mx-auto px-6 md:px-12">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-start">
+<div>
+<span class="text-xs font-black uppercase tracking-[0.3em] text-secondary mb-6 block">Our Mandate</span>
+<h2 class="text-4xl md:text-5xl font-bold tracking-tighter text-primary leading-tight mb-8">
+                    Bridging the Gap Between Concept and Capability.
+                </h2>
+<p class="text-secondary text-lg leading-relaxed max-w-xl">
+                    In complex, regulated, and mission-critical environments, fragmented supply chains lead to operational failure. AZT LLC acts as a single point of accountability, coordinating global suppliers to deliver mission-ready platforms.
+                </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-12">
+<div class="space-y-4">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="hub">hub</span>
+<h3 class="text-lg font-bold uppercase tracking-tight">Unified Coordination</h3>
+<p class="text-sm text-secondary leading-relaxed">Centralizing complex procurement and logistics under a single executive oversight framework.</p>
+</div>
+<div class="space-y-4">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="translate">translate</span>
+<h3 class="text-lg font-bold uppercase tracking-tight">Operational Translation</h3>
+<p class="text-sm text-secondary leading-relaxed">Translating strategic intent into tactical deployment through engineering and operational excellence.</p>
+</div>
+<div class="space-y-4">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="public">public</span>
+<h3 class="text-lg font-bold uppercase tracking-tight">Global Access / Local Impact</h3>
+<p class="text-sm text-secondary leading-relaxed">Leveraging international networks to deliver localized, high-impact sovereign capabilities.</p>
+</div>
+<div class="space-y-4">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="verified_user">verified_user</span>
+<h3 class="text-lg font-bold uppercase tracking-tight">Strategic Readiness</h3>
+<p class="text-sm text-secondary leading-relaxed">Ensuring long-term sustainability and fleet readiness through specialized support structures.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Capability Portfolio -->
+<section class="bg-surface-container-low py-32">
+<div class="max-w-[1920px] mx-auto px-6 md:px-12">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
+<div>
+<span class="text-xs font-black uppercase tracking-[0.3em] text-secondary mb-4 block">Portfolios</span>
+<h2 class="text-4xl font-bold tracking-tighter text-primary">Core Capability Domains</h2>
+</div>
+<div>
+<button class="text-sm font-bold uppercase border-b-2 border-primary pb-1">All Capabilities</button>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1: Aviation -->
+<div class="group relative aspect-[3/4] overflow-hidden bg-primary-container cursor-pointer">
+<img alt="" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Modern military ISR turboprop special mission aircraft parked inside a dark, high-tech aviation hangar at night with cinematic blue accent lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlx0eND9sdRBg-ERe94-ZBGxkGPoT43LyJjoYcFLhMeJej60R3IgwaFeyoQ-g7mYVVCRTvPOqexYR2ookxxtul6-_ZK8xhuFxl0R9vAiRYuVlXPRz2rwV3oAWbU3BeK7PBvsFRmNf6_91QPEQ3eVvBeBQ7k_atYBlN6KAQDJFYKP7Zf6Jz6Tfk4LmSw-PxUSZWFTJrv8VBFTXQdTUEr1qjQrAOIJeCHqwTCgWwvBsmh2gIXf4X6YIEI5iZGtx_24mosk89EPZJuxj5"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#041329] via-[#041329]/20 to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full">
+<h3 class="text-white text-xl font-bold uppercase mb-2">Aviation Solutions</h3>
+<p class="text-white/70 text-sm transform translate-y-4 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">Fixed and rotary-wing asset management and modernization.</p>
+</div>
+</div>
+<!-- Card 2: Integrated Defense -->
+<div class="group relative aspect-[3/4] overflow-hidden bg-primary-container cursor-pointer">
+<img alt="" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Advanced military armored personnel carrier (APC) parked in a tactical formation in a vast desert landscape at dusk, dramatic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAf4q7uAk4McXbOc9U6nasZLnWVwGvCKHbH_V9zG54PJZ7xw24lB-6FRvael99llzlomh5hjbjOd6xKMCMQLlCE7Rn6TED9_CAp8hHv9SvEnCW8d0DA8aqDyKIaQZ4u6bm1DYVMKHrI_4QSvVF9MqyYItRk6K4S9c6IoGoh4lBSQvwspu5XhIaOT7x0RvTEuEtGOElMfJPycMVJEAaOa18NB-9jH00OSAfiWYdsM9m1zmwScdSattLapwZq3KkoyTI-Va1-5K6Re5rt"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#041329] via-[#041329]/20 to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full">
+<h3 class="text-white text-xl font-bold uppercase mb-2">Integrated Defense</h3>
+<p class="text-white/70 text-sm transform translate-y-4 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">Turnkey defense systems and tactical intelligence infrastructure.</p>
+</div>
+</div>
+<!-- Card 3: Maritime Security -->
+<div class="group relative aspect-[3/4] overflow-hidden bg-primary-container cursor-pointer">
+<img alt="" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Stealth offshore patrol vessel (OPV) cutting through deep dark ocean waves at twilight, silhouettes against a deep blue sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOhseVEKfTfp1-1n2M8jSf6qb0iTAtcy3BI0CyDlFmn-rJ_9B-RPWJQQ0tFzQBdZu2sJ0tNgAwycssrT3dMBqG1ci9cMpx7aDfQbDZX4luCOofMxmdPKw2y9OTfCzBIiz8PsSqLTS95WAiB4_oEEMUi6Qic3ikbn86wI66l-I9RuIEBjCJTAYVpCrSgG_DSUqfvlkIAaOfn42ocdL__klsAbUTLK-NWi8edQVCgbY1NA_yyYIIMacOAa67V_8_JTacy8WIW8kkVTvq"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#041329] via-[#041329]/20 to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full">
+<h3 class="text-white text-xl font-bold uppercase mb-2">Maritime Security</h3>
+<p class="text-white/70 text-sm transform translate-y-4 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">Coastal surveillance, port security, and specialized marine platforms.</p>
+</div>
+</div>
+<!-- Card 4: Critical Infrastructure -->
+<div class="group relative aspect-[3/4] overflow-hidden bg-primary-container cursor-pointer">
+<img alt="" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="High-tech modern digital command center interior with glowing blue radar arrays, holographic data displays, and tactical consoles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBplaEYA5yIkqc4aj91g512ha6ZH8mbIGwInJDQz3gAG8l24FZiGrSGPeOrjY-0xurQegpIDvgB1CHQ9Lbk7QSkvlvVkNUyvZlduijTZ3Udyc4hzO-Lvxb_vIEd3qYCFSyDr94a47e0CPT6C3saWdnwc5UBbUxO8wLGf-nbNdRM7Espz-csdk6kymTlHC4KbnWOwynbmRXnAHtMfc6Hkg_0PP6C6Di3BPacFj864taYUACeXAXvbsX2wqmGisnwc9Iiy9RinOYp0DtS"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#041329] via-[#041329]/20 to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full">
+<h3 class="text-white text-xl font-bold uppercase mb-2">Critical Infrastructure</h3>
+<p class="text-white/70 text-sm transform translate-y-4 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">Hardening of physical and digital assets against emerging threats.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Full-Cycle Execution Model -->
+<section class="bg-surface-container-lowest py-32 border-y border-outline-variant/15">
+<div class="max-w-[1920px] mx-auto px-6 md:px-12">
+<div class="text-center mb-24">
+<span class="text-xs font-black uppercase tracking-[0.3em] text-secondary mb-4 block">Methodology</span>
+<h2 class="text-4xl font-bold tracking-tighter text-primary">Full-Cycle Execution Model</h2>
+</div>
+<div class="relative">
+<!-- Timeline Line -->
+<div class="absolute top-[24px] left-0 w-full h-[1px] bg-outline-variant/30 hidden lg:block"></div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-y-16 gap-x-8 relative z-10">
+<!-- Step 1 -->
+<div class="flex flex-col items-center text-center group">
+<div class="w-12 h-12 bg-primary-container text-white flex items-center justify-center font-bold mb-6 group-hover:scale-110 transition-transform">01</div>
+<h4 class="font-bold uppercase tracking-widest text-sm mb-4">Strategy</h4>
+<p class="text-[11px] text-secondary leading-relaxed px-2">Defining mission requirements and architectural blueprints.</p>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col items-center text-center group">
+<div class="w-12 h-12 bg-primary-container text-white flex items-center justify-center font-bold mb-6 group-hover:scale-110 transition-transform">02</div>
+<h4 class="font-bold uppercase tracking-widest text-sm mb-4">Access</h4>
+<p class="text-[11px] text-secondary leading-relaxed px-2">Utilizing global supply networks and trade authorizations.</p>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col items-center text-center group">
+<div class="w-12 h-12 bg-primary-container text-white flex items-center justify-center font-bold mb-6 group-hover:scale-110 transition-transform">03</div>
+<h4 class="font-bold uppercase tracking-widest text-sm mb-4">Integration</h4>
+<p class="text-[11px] text-secondary leading-relaxed px-2">Complex systems engineering and interoperability checks.</p>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col items-center text-center group">
+<div class="w-12 h-12 bg-primary-container text-white flex items-center justify-center font-bold mb-6 group-hover:scale-110 transition-transform">04</div>
+<h4 class="font-bold uppercase tracking-widest text-sm mb-4">Delivery</h4>
+<p class="text-[11px] text-secondary leading-relaxed px-2">End-to-end tactical logistics and asset handover.</p>
+</div>
+<!-- Step 5 -->
+<div class="flex flex-col items-center text-center group">
+<div class="w-12 h-12 bg-primary-container text-white flex items-center justify-center font-bold mb-6 group-hover:scale-110 transition-transform">05</div>
+<h4 class="font-bold uppercase tracking-widest text-sm mb-4">Readiness</h4>
+<p class="text-[11px] text-secondary leading-relaxed px-2">Operator training, simulation, and initial fielding.</p>
+</div>
+<!-- Step 6 -->
+<div class="flex flex-col items-center text-center group">
+<div class="w-12 h-12 bg-primary-container text-white flex items-center justify-center font-bold mb-6 group-hover:scale-110 transition-transform">06</div>
+<h4 class="font-bold uppercase tracking-widest text-sm mb-4">Sustainment</h4>
+<p class="text-[11px] text-secondary leading-relaxed px-2">Continuous maintenance, repair, and lifecycle support.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Global Reach -->
+<section class="bg-surface-container-low py-32 relative overflow-hidden">
+<div class="max-w-[1920px] mx-auto px-6 md:px-12 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div class="order-2 lg:order-1">
+<div class="aspect-square bg-primary-container/5 relative p-6 md:p-12">
+<img alt="" class="w-full h-full object-cover opacity-80" data-alt="High-resolution digital Earth render showing global connectivity nodes and data flow networks in deep space blue" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwrRC144SZTiT-u7rySc6p-azUx5wLYzKSrgNMPrAiOAJG3KRQZv-NVOhECmDx3H7DMtjmPvI1vTZSUbPviyNKvKrOTec7HQjvHmYwpv0Y2wNtpcQEG95t1JI045GaaYTuunQStU4hg_FjpZdr4Ah3y8BsME48E3iS_8rCbRnIB1P6PQfaVDt1h48GL9S1i-A6WqASEDkSig3RUGUk5zvu1YZOcfDZTXu-fDbVK33Qw4xZ7TTSxx03Qw79Q9DaUtDABwxat57KAxOa"/>
+<div class="absolute -bottom-4 -right-4 md:-bottom-8 md:-right-8 bg-surface-container-lowest p-6 md:p-8 shadow-xl max-w-[200px] md:max-w-xs">
+<h5 class="font-bold text-2xl md:text-3xl mb-1">45+</h5>
+<p class="text-[10px] uppercase tracking-widest text-secondary">Operational Theaters</p>
+<div class="w-full h-[1px] bg-outline-variant/30 my-4"></div>
+<p class="text-[10px] md:text-xs leading-relaxed text-on-surface-variant">Strategic presence in key sovereign territories with secure supply lines.</p>
+</div>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<span class="text-xs font-black uppercase tracking-[0.3em] text-secondary mb-6 block">Intelligence Network</span>
+<h2 class="text-4xl md:text-6xl font-bold tracking-tighter text-primary leading-tight mb-8">
+                    Global Command.<br/>Local Execution.
+                </h2>
+<p class="text-lg text-on-surface-variant mb-12 max-w-lg">
+                    Our partner network spans six continents, allowing us to navigate complex regulatory landscapes and provide on-the-ground support in the world's most demanding environments.
+                </p>
+<ul class="space-y-6">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+<div>
+<h6 class="font-bold text-sm uppercase">North American HQ</h6>
+<p class="text-xs text-secondary">Strategic procurement and executive leadership.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+<div>
+<h6 class="font-bold text-sm uppercase">European Hub</h6>
+<p class="text-xs text-secondary">Aviation engineering and NATO standard integration.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+<div>
+<h6 class="font-bold text-sm uppercase">ME/Africa Operations</h6>
+<p class="text-xs text-secondary">Field support and infrastructure development.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Secure Inquiry Form -->
+<section class="bg-primary-container py-32">
+<div class="max-w-[1920px] mx-auto px-6 md:px-12">
+<div class="max-w-4xl mx-auto bg-surface-container-lowest p-8 md:p-12 lg:p-20 shadow-2xl relative">
+<div class="absolute top-0 right-0 p-8 hidden sm:block">
+<span class="material-symbols-outlined text-primary-container/20 text-6xl" data-icon="encrypted">encrypted</span>
+</div>
+<div class="mb-12">
+<h2 class="text-3xl font-bold tracking-tighter text-primary mb-4">Secure Inquiry Portal</h2>
+<p class="text-sm text-secondary">Submit your requirements for executive review. All communications are strictly confidential.</p>
+</div>
+<form class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="text-[10px] font-black uppercase tracking-widest text-secondary">Full Name</label>
+<input class="w-full bg-surface-container-low border-none focus:ring-1 focus:ring-primary-container p-4 text-sm" placeholder="REQUIRED" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-[10px] font-black uppercase tracking-widest text-secondary">Organization / Agency</label>
+<input class="w-full bg-surface-container-low border-none focus:ring-1 focus:ring-primary-container p-4 text-sm" placeholder="REQUIRED" type="text"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-[10px] font-black uppercase tracking-widest text-secondary">Domain of Interest</label>
+<select class="w-full bg-surface-container-low border-none focus:ring-1 focus:ring-primary-container p-4 text-sm">
+<option>Aviation Solutions</option>
+<option>Integrated Defense</option>
+<option>Maritime Security</option>
+<option>Infrastructure Security</option>
+<option>Other / Unspecified</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-[10px] font-black uppercase tracking-widest text-secondary">Brief Description of Requirement</label>
+<textarea class="w-full bg-surface-container-low border-none focus:ring-1 focus:ring-primary-container p-4 text-sm" placeholder="PLEASE PROVIDE HIGH-LEVEL DETAILS..." rows="4"></textarea>
+</div>
+<div class="flex flex-col md:flex-row items-center justify-between gap-8 pt-4">
+<div class="text-[10px] text-error uppercase font-medium leading-tight max-w-sm flex gap-3 items-center">
+<span class="material-symbols-outlined text-sm" data-icon="security">security</span>
+                        Transmission secured via AES-256 encryption. Unauthorized access is strictly prohibited.
+                    </div>
+<button class="bg-primary-container text-white px-12 py-4 font-bold uppercase tracking-[0.2em] text-xs hover:bg-black transition-colors w-full md:w-auto">
+                        INITIALIZE REQUEST
+                    </button>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#05080F] text-[#8E9196] pt-20 pb-10">
+<div class="max-w-[1920px] mx-auto px-12">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-24 mb-16">
+<!-- Column 1: Identity -->
+<div>
+<div class="flex items-center gap-2 mb-6">
+<div class="bg-white p-1">
+<span class="material-symbols-outlined text-black text-lg" style="font-variation-settings: 'FILL' 1;">shield_with_house</span>
+</div>
+<div class="text-white text-xl font-black tracking-tighter uppercase">AZT LLC</div>
+</div>
+<p class="text-sm leading-relaxed max-w-xs uppercase tracking-wider font-medium opacity-80">
+                    Strategic Solutions,<br/>Powered by Global Expertise.
+                </p>
+</div>
+<!-- Column 2: U.S. Headquarters -->
+<div class="space-y-6">
+<h4 class="text-white text-xs font-bold uppercase tracking-[0.2em]">U.S. HEADQUARTERS</h4>
+<div class="text-sm space-y-3 leading-relaxed text-white font-medium">
+<p class="flex items-center gap-2">
+<img alt="United States Flag" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQWp6Shr2kSgfq4g9NUFea6pl1iCOapMVzRrzzsNvnrufSdKfC2Nr5QUThnaJXTP0eceBKZzJe2kGrxWodpiv6XGBR8neWOMNmLwmyC2mOGUAAf-h6WMXqMUocb8FgUB-5BLnwD9Yapq89Tsr7u4bg_IUp-r47yPVpyLdPRmh2qRdx73HdHAvHIXUAl0Fi0i8jCfdQaB3MyrARWM2M6kKWSpj0b85F8XcK8aK6q0xGdU7fqii4FYQr1NXCO-u9Zk51ZDv8GwYG9gQY" width="20"/>
+                        2380 Diana Dr,<br/>Hallandale Beach, FL 33009, USA.
+                    </p>
+<p>Phone: +1 (954) 683-9458</p>
+<p>Email: <a class="text-[#8E9196] hover:text-white transition-colors" href="mailto:aztradingpower@outlook.com">aztradingpower@outlook.com</a></p>
+</div>
+</div>
+<!-- Column 3: Certifications -->
+<div class="space-y-6">
+<h4 class="text-white text-xs font-bold uppercase tracking-[0.2em]">CERTIFICATIONS</h4>
+<ul class="text-sm space-y-3">
+<li>ITAR Compliant</li>
+<li>Export Control Managed</li>
+<li>ISO 9001 Standards</li>
+<li>Mission Readiness Certified</li>
+</ul>
+</div>
+<!-- Column 4: Resources -->
+<div class="space-y-6">
+<h4 class="text-white text-xs font-bold uppercase tracking-[0.2em]">RESOURCES</h4>
+<ul class="text-sm space-y-3">
+<li><a class="hover:text-white transition-colors" href="#">Careers</a></li>
+<li><a class="hover:text-white transition-colors" href="#">NewsRoom</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Privacy Policy</a></li>
+</ul>
+<div class="pt-4">
+<a class="text-white/60 hover:text-white transition-colors" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-white/5 flex flex-col items-center gap-6">
+<p class="text-[10px] uppercase tracking-widest opacity-40 text-center">
+                © 2024 Institutional Excellence. All Rights Reserved. International Traffic in Arms Regulations (ITAR) Compliant.
+            </p>
+<p class="text-[10px] uppercase tracking-[0.15em] opacity-30 text-center max-w-2xl leading-loose">
+                AZT LLC operates in strict accordance with ITAR and EAR regulations. All strategic programs are subject to U.S. and International export control laws.
+            </p>
+</div>
+</div>
+</footer>
+</body></html>
