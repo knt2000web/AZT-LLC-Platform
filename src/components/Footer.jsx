@@ -13,7 +13,7 @@ export default function Footer() {
               src="/AZT_LLC_LOGO.png"
               alt="AZT LLC"
               className="h-auto max-w-[180px] object-contain"
-              style={{ imageRendering: '-webkit-optimize-contrast' }}
+              style={{ imageRendering: '-webkit-optimize-contrast', filter: 'brightness(0) invert(1)' }}
             />
             <p className="text-[10px] leading-relaxed uppercase tracking-widest font-black text-white">
               AZ Trading LLC
