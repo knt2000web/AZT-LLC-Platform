@@ -1,12 +1,15 @@
 const locations = [
-  { title: 'North American HQ',     desc: 'Strategic procurement and executive leadership.' },
-  { title: 'European Hub',          desc: 'Aviation engineering and NATO standard integration.' },
-  { title: 'M.E. / Africa Ops',     desc: 'Field support and infrastructure development.' },
+  { title: 'North American HQ',   desc: 'Strategic procurement and executive leadership.' },
+  { title: 'European Hub',        desc: 'Aviation engineering and NATO standard integration.' },
+  { title: 'M.E. / Africa Ops',  desc: 'Field support and infrastructure development.' },
+  { title: 'Asia-Pacific Hub',   desc: 'Maritime systems and regional defense partnerships.' },
+  { title: 'Latin America Ops',  desc: 'Humanitarian logistics and sovereign capability programs.' },
+  { title: 'Central Asia Ops',   desc: 'Border security, surveillance, and infrastructure projects.' },
 ];
 
 export default function GlobalReach() {
   return (
-    <section id="reach" className="bg-surface-container py-24 md:py-36 border-t border-accent/20">
+    <section id="reach" className="bg-surface-container py-16 md:py-24 border-t border-accent/20">
       <div className="max-w-screen-2xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-28 items-center">
 
@@ -41,17 +44,19 @@ export default function GlobalReach() {
               Our partner network spans six continents, allowing us to navigate complex regulatory
               landscapes and provide on-the-ground support in the world's most demanding environments.
             </p>
-            <ul className="space-y-8">
+            <ul className="space-y-6">
               {locations.map(({ title, desc }) => (
                 <li key={title} className="flex items-start gap-5">
-                  <div className="bg-primary/5 rounded-full p-2.5 flex-shrink-0 text-accent">
-                    <span className="material-symbols-outlined block" style={{ fontSize: '26px' }} translate="no">
-                      location_on
-                    </span>
-                  </div>
-                  <div className="pt-1">
-                    <h6 className="font-black text-sm uppercase text-primary tracking-wide mb-1">{title}</h6>
-                    <p className="text-sm text-secondary leading-relaxed max-w-md">{desc}</p>
+                  <span
+                    className="material-symbols-outlined text-accent flex-shrink-0 mt-0.5"
+                    translate="no"
+                    style={{ fontSize: '20px' }}
+                  >
+                    location_on
+                  </span>
+                  <div>
+                    <h6 className="text-[10px] font-black uppercase tracking-widest text-primary">{title}</h6>
+                    <p className="text-xs text-secondary leading-relaxed mt-0.5">{desc}</p>
                   </div>
                 </li>
               ))}
