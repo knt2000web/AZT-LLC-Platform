@@ -6,6 +6,7 @@ import Difference   from './components/Difference';
 import Domains      from './components/Domains';
 import Methodology  from './components/Methodology';
 import GlobalReach  from './components/GlobalReach';
+import AboutUs      from './components/AboutUs';
 import InquiryForm  from './components/InquiryForm';
 import Footer       from './components/Footer';
 
@@ -26,6 +27,7 @@ export default function App() {
         <Domains />
         <Methodology />
         <GlobalReach />
+        <AboutUs />
         <InquiryForm />
       </main>
       <Footer />
