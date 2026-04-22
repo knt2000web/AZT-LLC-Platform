@@ -31,7 +31,7 @@ export default function Navbar() {
             src="/AZT_LLC_LOGO.png"
             alt="AZT LLC"
             className="h-[38px] md:h-[46px] object-contain"
-            style={{ imageRendering: '-webkit-optimize-contrast' }}
+            style={{ imageRendering: '-webkit-optimize-contrast', filter: 'invert(1)', mixBlendMode: 'screen' }}
           />
         </a>
 
