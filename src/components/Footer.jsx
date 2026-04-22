@@ -43,10 +43,10 @@ export default function Footer() {
               <p>2380 Diana Dr,<br />Hallandale Beach, FL 33009, USA</p>
               <p className="font-black text-white">+1 (954) 683-9458</p>
               <a
-                href="mailto:info@aztllc.com"
-                className="text-accent hover:text-white transition-colors underline decoration-accent/30 block"
+                href="mailto:aztradingpower@outlook.com"
+                className="text-[11px] uppercase tracking-widest text-secondary hover:text-white transition-colors"
               >
-                info@aztllc.com
+                aztradingpower@outlook.com
               </a>
             </div>
           </div>

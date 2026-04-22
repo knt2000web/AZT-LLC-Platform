@@ -112,7 +112,7 @@ export default function InquiryForm() {
                 <p className="text-[11px] font-black uppercase tracking-widest text-red-700">Transmission Failed</p>
                 <p className="text-xs text-red-600 mt-1">
                   A technical error occurred. Please retry or contact us directly at{' '}
-                  <a href="mailto:info@aztllc.com" className="underline">info@aztllc.com</a>.
+                  <a href="mailto:aztradingpower@outlook.com" className="underline">aztradingpower@outlook.com</a>.
                 </p>
               </div>
             </div>
