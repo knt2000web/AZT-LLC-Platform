@@ -127,7 +127,7 @@ export default function AboutUs() {
               <img
                 src="/fabian_ceo.jpg"
                 alt="Fabián Ricardo Giraldo Chaparro — CEO, AZT LLC"
-                className="w-full object-cover grayscale brightness-90 hover:grayscale-0 hover:brightness-100 transition-all duration-500"
+                className="w-full object-cover transition-all duration-500"
                 style={{ aspectRatio: '3/4' }}
               />
               <div className="absolute bottom-0 left-0 right-0 bg-primary/80 px-3 py-2">
