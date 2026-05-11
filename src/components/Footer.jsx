@@ -89,7 +89,7 @@ export default function Footer() {
 
             {/* LinkedIn */}
             <a
-              href="https://linkedin.com/company/azt-llc"
+              href="https://www.linkedin.com/in/fabian-giraldo-7971b415/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="AZT LLC on LinkedIn"
