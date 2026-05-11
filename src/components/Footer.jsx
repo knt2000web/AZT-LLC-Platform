@@ -1,9 +1,7 @@
 const certs = [
-  'ITAR Compliant',
   'Export Control Managed',
   'ISO 9001 Standards',
-  'Mission Readiness Certified',
-  'SAM.gov / CAGE Ready',
+  'Global Trade Compliance',
 ];
 
 const resources = [
@@ -107,10 +105,10 @@ export default function Footer() {
         {/* Legal bar */}
         <div className="border-t border-accent/20 pt-8 text-center space-y-2">
           <p className="text-[10px] uppercase tracking-widest font-medium opacity-50">
-            &copy; {new Date().getFullYear()} AZT LLC. All Rights Reserved. ITAR Compliant.
+            &copy; {new Date().getFullYear()} AZT LLC. All Rights Reserved.
           </p>
           <p className="text-[10px] uppercase tracking-widest font-medium opacity-30 max-w-2xl mx-auto leading-relaxed">
-            AZT LLC operates in strict accordance with ITAR and EAR regulations. All strategic programs are subject to U.S. and International export control laws.
+            All international programs are conducted in compliance with applicable U.S. and international trade regulations through licensed partners.
           </p>
         </div>
       </div>

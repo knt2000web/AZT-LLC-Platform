@@ -26,7 +26,6 @@ const certs = [
   { label: 'EAR Managed',               detail: 'Export Administration Regulations compliance coordinated across all programs' },
   { label: 'ISO 9001 Standards',        detail: 'Quality management processes aligned with international ISO 9001 frameworks' },
   { label: 'Mission-Ready Standards',   detail: 'Platforms and programs delivered to government and military operational specifications' },
-  { label: 'U.S. Federal Market',       detail: 'SAM.gov registration and CAGE Code issuance in process for federal procurement' },
 ];
 
 export default function AboutUs() {
@@ -95,11 +94,10 @@ export default function AboutUs() {
 
             {/* Government procurement note */}
             <div className="mt-8 bg-accent/10 border border-accent/30 p-6">
-              <p className="text-[10px] font-black uppercase tracking-widest text-accent mb-2">U.S. Federal Procurement</p>
+              <p className="text-[10px] font-black uppercase tracking-widest text-accent mb-2">U.S. Federal Market Access</p>
               <p className="text-accent/60 text-xs leading-relaxed">
-                AZT LLC is actively progressing toward SAM.gov registration and CAGE Code issuance
-                to support U.S. federal contracting opportunities. For procurement inquiries,
-                contact us via the Secure Inquiry Portal.
+                AZT LLC is structured to support U.S. federal contracting requirements.
+                For government procurement inquiries, contact us directly via the Secure Inquiry Portal.
               </p>
             </div>
           </div>
