@@ -24,6 +24,12 @@ const photos = [
   { src: '/fotos/p22.jpg', cat: 'Operations',           alt: 'Field program coordination' },
   { src: '/fotos/p23.jpg', cat: 'Operations',           alt: 'Operational readiness assessment' },
   { src: '/fotos/p24.jpg', cat: 'Defense Expo',         alt: 'International defense industry exhibition' },
+  { src: '/fotos/p25.jpg', cat: 'Operations',           alt: 'AZT LLC operational program' },
+  { src: '/fotos/p26.jpg', cat: 'Operations',           alt: 'AZT LLC field engagement' },
+  { src: '/fotos/p27.jpg', cat: 'Operations',           alt: 'AZT LLC strategic program execution' },
+  { src: '/fotos/p28.jpg', cat: 'Operations',           alt: 'AZT LLC international operations' },
+  { src: '/fotos/p29.jpg', cat: 'Operations',           alt: 'AZT LLC capability deployment' },
+  { src: '/fotos/p30.jpg', cat: 'Operations',           alt: 'AZT LLC program support' },
 ];
 
 const CAT_COLORS = {
