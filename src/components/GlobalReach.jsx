@@ -1,10 +1,28 @@
 const locations = [
-  { title: 'North American HQ',   desc: 'Strategic procurement and executive leadership.' },
-  { title: 'European Hub',        desc: 'Aviation engineering and NATO standard integration.' },
-  { title: 'M.E. / Africa Ops',  desc: 'Field support and infrastructure development.' },
-  { title: 'Asia-Pacific Hub',   desc: 'Maritime systems and regional defense partnerships.' },
-  { title: 'Latin America Ops',  desc: 'Humanitarian logistics and sovereign capability programs.' },
-  { title: 'Central Asia Ops',   desc: 'Border security, surveillance, and infrastructure projects.' },
+  {
+    title: 'North America',
+    desc: 'United States · Canada · Mexico',
+  },
+  {
+    title: 'Latin America',
+    desc: 'Colombia · Ecuador · Chile · Argentina · El Salvador',
+  },
+  {
+    title: 'Europe',
+    desc: 'United Kingdom · Poland · Belgium · Ukraine · North Macedonia',
+  },
+  {
+    title: 'Middle East',
+    desc: 'Qatar · UAE · Oman · Saudi Arabia · Israel',
+  },
+  {
+    title: 'Africa',
+    desc: 'Egypt',
+  },
+  {
+    title: 'Asia-Pacific',
+    desc: 'Vietnam · Indonesia',
+  },
 ];
 
 export default function GlobalReach() {
@@ -17,19 +35,19 @@ export default function GlobalReach() {
           <div className="order-2 lg:order-1 relative">
             <div className="relative w-full aspect-square md:aspect-auto md:h-[500px] overflow-hidden rounded-sm shadow-sm border border-accent/20">
               <img
-                src="/azt_world_map.png"
-                alt="Global Intelligence Map"
+                src="/azt_world_map_v2.png"
+                alt="AZT LLC Global Network — 21 Countries across Americas, Europe, Middle East, Africa and Asia-Pacific"
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
             </div>
             {/* Badge */}
             <div className="absolute -bottom-6 -right-2 md:-bottom-8 md:-right-6 bg-white p-6 md:p-8 shadow-2xl border-l-4 border-l-accent max-w-[220px]">
-              <p className="font-black text-4xl text-primary mb-1">45+</p>
-              <p className="text-[10px] md:text-xs uppercase tracking-widest text-accent font-black">Operational Theaters</p>
+              <p className="font-black text-4xl text-primary mb-1">21</p>
+              <p className="text-[10px] md:text-xs uppercase tracking-widest text-accent font-black">Countries · 6 Regions</p>
               <div className="w-full h-px bg-accent/20 my-4" />
               <p className="text-[10px] md:text-xs leading-relaxed text-secondary font-medium">
-                Strategic presence in key sovereign territories with secure supply lines.
+                Verified commercial access across the Americas, Europe, Middle East, Africa, and Asia-Pacific.
               </p>
             </div>
           </div>

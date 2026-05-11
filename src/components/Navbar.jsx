@@ -5,6 +5,7 @@ const links = [
   { label: 'Capabilities', href: '#capabilities' },
   { label: 'Execution Model', href: '#execution-model' },
   { label: 'Global Reach', href: '#reach' },
+  { label: 'Gallery', href: '#gallery' },
   { label: 'About Us', href: '#about' }
 ];
 
@@ -26,11 +27,11 @@ export default function Navbar() {
     >
       <div className="max-w-screen-2xl mx-auto px-6 md:px-12 flex items-center justify-between h-[68px]">
         {/* Logo */}
-        <a href="#" className="bg-white px-3 py-1.5 rounded-sm flex items-center justify-center shadow-sm">
+        <a href="#" className="bg-white px-3 py-2 rounded-sm flex items-center justify-center shadow-sm">
           <img
             src="/AZT_LLC_LOGO.png"
             alt="AZT LLC"
-            className="h-[28px] md:h-[34px] object-contain"
+            className="h-[38px] md:h-[48px] object-contain"
             style={{ imageRendering: '-webkit-optimize-contrast' }}
           />
         </a>

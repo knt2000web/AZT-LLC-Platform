@@ -5,14 +5,28 @@ const DOMAINS = [
   'Aviation Solutions',
   'Integrated Defense',
   'Maritime Security',
-  'Infrastructure Security',
+  'Critical Infrastructure',
+  'Mining & Energy',
   'Other / Unspecified',
+];
+
+const PROGRAM_TYPES = [
+  'New Procurement',
+  'Fleet Sustainment / Spare Parts',
+  'Logistics & Supply Chain',
+  'Technical Consulting',
+  'Partnership / Joint Venture',
+  'Other',
 ];
 
 const INITIAL = {
   full_name:       '',
   organization:    '',
+  email:           '',
+  phone:           '',
+  country:         '',
   domain_interest: DOMAINS[0],
+  program_type:    PROGRAM_TYPES[0],
   description:     '',
 };
 
@@ -25,6 +39,7 @@ export default function InquiryForm() {
     const e = {};
     if (!form.full_name.trim())    e.full_name    = 'Full name is required.';
     if (!form.organization.trim()) e.organization = 'Organization is required.';
+    if (!form.email.trim())        e.email        = 'Email address is required.';
     if (!form.description.trim())  e.description  = 'Please provide a brief description.';
     return e;
   };
@@ -111,8 +126,7 @@ export default function InquiryForm() {
               <div>
                 <p className="text-[11px] font-black uppercase tracking-widest text-red-700">Transmission Failed</p>
                 <p className="text-xs text-red-600 mt-1">
-                  A technical error occurred. Please retry or contact us directly at{' '}
-                  <a href="mailto:aztradingpower@outlook.com" className="underline">aztradingpower@outlook.com</a>.
+                   Please retry or contact us via the Secure Inquiry Portal or reach out through our official corporate channels.
                 </p>
               </div>
             </div>
@@ -124,7 +138,7 @@ export default function InquiryForm() {
               {/* Row 1: Name + Org */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <Field
-                  label="Full Name"
+                  label="Full Name *"
                   name="full_name"
                   type="text"
                   placeholder="REQUIRED"
@@ -133,7 +147,7 @@ export default function InquiryForm() {
                   error={errors.full_name}
                 />
                 <Field
-                  label="Organization / Agency"
+                  label="Organization / Agency *"
                   name="organization"
                   type="text"
                   placeholder="REQUIRED"
@@ -141,6 +155,56 @@ export default function InquiryForm() {
                   onChange={handleChange}
                   error={errors.organization}
                 />
+              </div>
+
+              {/* Row 2: Email + Phone */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <Field
+                  label="Email Address *"
+                  name="email"
+                  type="email"
+                  placeholder="REQUIRED"
+                  value={form.email}
+                  onChange={handleChange}
+                  error={errors.email}
+                />
+                <Field
+                  label="Phone / WhatsApp"
+                  name="phone"
+                  type="tel"
+                  placeholder="OPTIONAL — INCL. COUNTRY CODE"
+                  value={form.phone}
+                  onChange={handleChange}
+                  error={errors.phone}
+                />
+              </div>
+
+              {/* Row 3: Country + Program Type */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <Field
+                  label="Country / Region"
+                  name="country"
+                  type="text"
+                  placeholder="E.G. UNITED STATES, COLOMBIA..."
+                  value={form.country}
+                  onChange={handleChange}
+                  error={errors.country}
+                />
+                <div className="space-y-2">
+                  <label className="text-[10px] font-black uppercase tracking-widest text-secondary block">
+                    Program Type
+                  </label>
+                  <select
+                    name="program_type"
+                    value={form.program_type}
+                    onChange={handleChange}
+                    className="w-full bg-surface-container border border-accent/30 focus:outline-none focus:ring-1 focus:ring-primary p-4 text-sm font-medium text-primary"
+                  >
+                    {PROGRAM_TYPES.map((p) => (
+                      <option key={p} value={p}>{p}</option>
+                    ))}
+                  </select>
+                </div>
               </div>
 
               {/* Domain select */}

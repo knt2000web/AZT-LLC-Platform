@@ -2,7 +2,7 @@ const pillars = [
   {
     icon: 'verified',
     title: 'Compliance First',
-    desc: 'All operations are conducted in strict accordance with ITAR, EAR, and applicable U.S. export control laws. AZT LLC maintains continuous compliance monitoring across all engagements.',
+    desc: 'All programs are structured in alignment with U.S. export control frameworks, including ITAR and EAR. AZT LLC partners with licensed export control specialists to ensure every engagement meets applicable regulatory requirements.',
   },
   {
     icon: 'handshake',
@@ -22,11 +22,11 @@ const pillars = [
 ];
 
 const certs = [
-  { label: 'ITAR Compliant',            detail: 'Registered under the International Traffic in Arms Regulations' },
-  { label: 'EAR Managed',               detail: 'Export Administration Regulations compliance across all programs' },
-  { label: 'ISO 9001 Standards',         detail: 'Quality management aligned with international ISO frameworks' },
-  { label: 'Mission Readiness Certified',detail: 'Platforms delivered to operational readiness specifications' },
-  { label: 'SAM.gov / CAGE Ready',       detail: 'CAGE Code processing available upon authorized request' },
+  { label: 'Export Control Managed',    detail: 'Programs structured in alignment with ITAR/EAR through licensed export control partners' },
+  { label: 'EAR Managed',               detail: 'Export Administration Regulations compliance coordinated across all programs' },
+  { label: 'ISO 9001 Standards',        detail: 'Quality management processes aligned with international ISO 9001 frameworks' },
+  { label: 'Mission-Ready Standards',   detail: 'Platforms and programs delivered to government and military operational specifications' },
+  { label: 'U.S. Federal Market',       detail: 'SAM.gov registration and CAGE Code issuance in process for federal procurement' },
 ];
 
 export default function AboutUs() {
@@ -95,11 +95,11 @@ export default function AboutUs() {
 
             {/* Government procurement note */}
             <div className="mt-8 bg-accent/10 border border-accent/30 p-6">
-              <p className="text-[10px] font-black uppercase tracking-widest text-accent mb-2">U.S. Government Procurement</p>
+              <p className="text-[10px] font-black uppercase tracking-widest text-accent mb-2">U.S. Federal Procurement</p>
               <p className="text-accent/60 text-xs leading-relaxed">
-                AZT LLC is prepared for registration in SAM.gov and CAGE Code issuance for federal
-                contracting purposes. For authorized procurement inquiries, contact us via the
-                Secure Inquiry Portal.
+                AZT LLC is actively progressing toward SAM.gov registration and CAGE Code issuance
+                to support U.S. federal contracting opportunities. For procurement inquiries,
+                contact us via the Secure Inquiry Portal.
               </p>
             </div>
           </div>
@@ -108,10 +108,10 @@ export default function AboutUs() {
         {/* Bottom stat bar */}
         <div className="border-t border-accent/20 pt-12 grid grid-cols-2 md:grid-cols-4 gap-8">
           {[
-            { value: '45+', label: 'Operational Theaters' },
+            { value: '20+', label: 'Operational Theaters' },
             { value: '20+', label: 'Years Combined Experience' },
             { value: '6',   label: 'Continents Active' },
-            { value: '100%', label: 'ITAR Compliant' },
+            { value: '100%', label: 'Export Compliant' },
           ].map(({ value, label }) => (
             <div key={label} className="text-center">
               <p className="text-white text-4xl md:text-5xl font-black tracking-tighter">{value}</p>

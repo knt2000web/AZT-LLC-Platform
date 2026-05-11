@@ -3,8 +3,8 @@ const items = [
   'AERO-TECH SYSTEMS',
   'SECURE MARITIME',
   'DEFENSE-LINK',
-  'PRECISION ENG',
-  'ITAR COMPLIANT',
+  'ENERGY SYSTEMS',
+  'EXPORT MANAGED',
 ];
 
 export default function OEMStrip() {

@@ -1,7 +1,7 @@
 const domains = [
   {
     title: 'Aviation Solutions',
-    desc:  'Fixed and rotary-wing asset management and modernization.',
+    desc:  'Fixed and rotary-wing asset management, overhaul, and modernization programs.',
     img:   '/azt_aviation.png',
     alt:   'Military aviation and rotary-wing asset modernization for global defense',
   },
@@ -22,6 +22,12 @@ const domains = [
     desc:  'Hardening of physical and digital assets against emerging threats.',
     img:   '/azt_infrastructure.png',
     alt:   'Critical infrastructure protection and asset hardening for defense operations',
+  },
+  {
+    title: 'Mining & Energy',
+    desc:  'Explosives, energy raw materials, and initiation systems for industrial and sovereign programs.',
+    img:   '/azt_mining_energy.png',
+    alt:   'Open-pit mining operations, explosives supply chain and energy systems for industrial programs',
   },
 ];
 
@@ -44,7 +50,7 @@ export default function Domains() {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
           {domains.map(({ title, desc, img, alt }) => (
             <div
               key={title}

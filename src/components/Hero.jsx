@@ -60,9 +60,9 @@ export default function Hero() {
         {/* Stats column */}
         <div className="grid grid-cols-1 gap-4">
           {[
-            { value: '45+', label: 'Operational Theaters' },
+            { value: '20+', label: 'Operational Theaters' },
             { value: '20+', label: 'Years Combined Experience' },
-            { value: '100%', label: 'ITAR Compliant Operations' },
+            { value: '100%', label: 'Export Control Managed' },
           ].map(({ value, label }) => (
             <div
               key={label}
