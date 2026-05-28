@@ -6,7 +6,7 @@ const photos = [
   { src: '/fotos/p03.jpg', cat: 'Mining & Energy',     alt: 'Underground mine tunnel with drilling equipment' },
   { src: '/fotos/p04.jpg', cat: 'Operations',           alt: 'Field program execution' },
   { src: '/fotos/p05.jpg', cat: 'Operations',           alt: 'Operational deployment' },
-  { src: '/fotos/p07.jpg', cat: 'Operations',           alt: 'Field operations support' },
+
   { src: '/fotos/p08.jpg', cat: 'Maritime',             alt: 'Naval patrol vessel at sea' },
   { src: '/fotos/p09.jpg', cat: 'Field Logistics',      alt: 'Industrial logistics and explosives transport convoy' },
   { src: '/fotos/p10.jpg', cat: 'Supply Chain',         alt: 'Secure warehouse with industrial container storage' },

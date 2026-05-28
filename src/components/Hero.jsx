@@ -27,7 +27,7 @@ export default function Hero() {
           </h1>
 
           {/* Tagline */}
-          <p className="text-accent/80 text-sm sm:text-base md:text-xl font-light leading-relaxed max-w-lg">
+          <p className="text-accent/90 text-base sm:text-lg md:text-xl font-normal leading-relaxed max-w-lg">
             Delivering integrated capability programs for government, commercial,
             and humanitarian sectors worldwide.
           </p>
@@ -44,13 +44,13 @@ export default function Hero() {
           <div className="flex gap-4 pt-4">
             <a
               href="#capabilities"
-              className="border border-accent text-white hover:bg-white hover:text-primary px-8 py-4 font-black tracking-widest uppercase text-xs transition-all duration-300"
+              className="border border-accent text-white hover:bg-white hover:text-primary px-8 py-4 font-black tracking-widest uppercase text-[14px] transition-all duration-300"
             >
               View Capabilities
             </a>
             <a
               href="#inquiry"
-              className="bg-accent text-primary hover:bg-white px-8 py-4 font-black tracking-widest uppercase text-xs transition-all duration-300"
+              className="bg-accent text-primary hover:bg-white px-8 py-4 font-black tracking-widest uppercase text-[14px] transition-all duration-300"
             >
               Secure Inquiry
             </a>
@@ -69,7 +69,7 @@ export default function Hero() {
               className="border border-accent/30 bg-white/5 backdrop-blur-sm p-8 text-right"
             >
               <p className="text-white text-5xl font-black tracking-tighter">{value}</p>
-              <p className="text-accent/70 text-[10px] uppercase tracking-widest font-semibold mt-1">{label}</p>
+              <p className="text-accent/92 text-[14px] uppercase tracking-widest font-bold mt-2 leading-snug">{label}</p>
             </div>
           ))}
         </div>

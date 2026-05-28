@@ -9,7 +9,7 @@ const locations = [
   },
   {
     title: 'Europe',
-    desc: 'United Kingdom · Poland · Belgium · Ukraine · North Macedonia',
+    desc: 'United Kingdom · Poland · Belgium · North Macedonia',
   },
   {
     title: 'Middle East',

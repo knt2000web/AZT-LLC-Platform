@@ -5,7 +5,7 @@
 @theme {
   --color-primary:           #0A1F33;
   --color-accent:            #C0C6CC;
-  --color-secondary:         #515f74;
+  --color-secondary:         #374151;
   --color-surface:           #f8f9fa;
   --color-surface-container: #edeeef;
 
@@ -57,20 +57,21 @@ body {
 
   .section-label {
     display: block;
-    font-size: 0.75rem;
-    font-weight: 900;
+    font-size: 0.875rem;    /* 14px */
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.3em;
-    color: #C0C6CC;
+    letter-spacing: 0.18em;
+    color: rgba(192,198,204,0.92);
+    line-height: 1.55;
     margin-bottom: 1.5rem;
   }
 
   .nav-link {
     font-weight: 600;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
-    font-size: 0.75rem;
-    color: #C0C6CC;
+    font-size: 0.875rem;    /* 14px */
+    color: rgba(255,255,255,0.88);
     transition: color 0.2s;
   }
 

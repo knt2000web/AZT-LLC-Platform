@@ -85,7 +85,7 @@ export default function InquiryForm() {
 
           {/* Header */}
           <h2 className="text-2xl md:text-3xl font-black text-primary mb-2">Secure Inquiry Portal</h2>
-          <p className="text-secondary text-sm mb-8 max-w-xl">
+          <p className="text-secondary text-[16px] mb-8 max-w-xl leading-relaxed">
             Submit your requirements for executive review. All communications are strictly confidential.
           </p>
           <div className="w-12 h-px bg-accent mb-8" />
@@ -101,12 +101,12 @@ export default function InquiryForm() {
                 check_circle
               </span>
               <h3 className="text-xl font-black text-primary uppercase tracking-widest">Message Received</h3>
-              <p className="text-secondary text-sm max-w-sm">
+              <p className="text-secondary text-[15px] max-w-sm leading-relaxed">
                 Your inquiry has been transmitted and logged securely. An AZT executive will contact you within 48 business hours.
               </p>
               <button
                 onClick={() => setStatus('idle')}
-                className="mt-4 text-[10px] uppercase tracking-widest font-black text-accent underline"
+                className="mt-4 text-[14px] uppercase tracking-widest font-black text-accent underline"
               >
                 Submit another inquiry
               </button>
@@ -124,8 +124,8 @@ export default function InquiryForm() {
                 error
               </span>
               <div>
-                <p className="text-[11px] font-black uppercase tracking-widest text-red-700">Transmission Failed</p>
-                <p className="text-xs text-red-600 mt-1">
+                <p className="text-[14px] font-bold uppercase tracking-widest text-red-700">Transmission Failed</p>
+                <p className="text-[14px] text-red-600 mt-1 leading-relaxed">
                    Please retry or contact us via the Secure Inquiry Portal or reach out through our official corporate channels.
                 </p>
               </div>
@@ -141,7 +141,7 @@ export default function InquiryForm() {
                   label="Full Name *"
                   name="full_name"
                   type="text"
-                  placeholder="REQUIRED"
+                  placeholder="Required"
                   value={form.full_name}
                   onChange={handleChange}
                   error={errors.full_name}
@@ -150,7 +150,7 @@ export default function InquiryForm() {
                   label="Organization / Agency *"
                   name="organization"
                   type="text"
-                  placeholder="REQUIRED"
+                  placeholder="Required"
                   value={form.organization}
                   onChange={handleChange}
                   error={errors.organization}
@@ -163,7 +163,7 @@ export default function InquiryForm() {
                   label="Email Address *"
                   name="email"
                   type="email"
-                  placeholder="REQUIRED"
+                  placeholder="Required"
                   value={form.email}
                   onChange={handleChange}
                   error={errors.email}
@@ -172,7 +172,7 @@ export default function InquiryForm() {
                   label="Phone / WhatsApp"
                   name="phone"
                   type="tel"
-                  placeholder="OPTIONAL — INCL. COUNTRY CODE"
+                  placeholder="Optional — include country code"
                   value={form.phone}
                   onChange={handleChange}
                   error={errors.phone}
@@ -185,20 +185,20 @@ export default function InquiryForm() {
                   label="Country / Region"
                   name="country"
                   type="text"
-                  placeholder="E.G. UNITED STATES, COLOMBIA..."
+                  placeholder="e.g. United States, Colombia..."
                   value={form.country}
                   onChange={handleChange}
                   error={errors.country}
                 />
                 <div className="space-y-2">
-                  <label className="text-[10px] font-black uppercase tracking-widest text-secondary block">
+                  <label className="text-[14px] font-bold uppercase tracking-widest text-secondary block">
                     Program Type
                   </label>
                   <select
                     name="program_type"
                     value={form.program_type}
                     onChange={handleChange}
-                    className="w-full bg-surface-container border border-accent/30 focus:outline-none focus:ring-1 focus:ring-primary p-4 text-sm font-medium text-primary"
+                    className="w-full bg-surface-container border border-accent/30 focus:outline-none focus:ring-1 focus:ring-primary p-4 text-[16px] font-medium text-primary"
                   >
                     {PROGRAM_TYPES.map((p) => (
                       <option key={p} value={p}>{p}</option>
@@ -209,14 +209,14 @@ export default function InquiryForm() {
 
               {/* Domain select */}
               <div className="space-y-2">
-                <label className="text-[10px] font-black uppercase tracking-widest text-secondary block">
+                <label className="text-[14px] font-bold uppercase tracking-widest text-secondary block">
                   Domain of Interest
                 </label>
                 <select
                   name="domain_interest"
                   value={form.domain_interest}
                   onChange={handleChange}
-                  className="w-full bg-surface-container border border-accent/30 focus:outline-none focus:ring-1 focus:ring-primary p-4 text-sm font-medium text-primary"
+                  className="w-full bg-surface-container border border-accent/30 focus:outline-none focus:ring-1 focus:ring-primary p-4 text-[16px] font-medium text-primary"
                 >
                   {DOMAINS.map((d) => (
                     <option key={d} value={d}>{d}</option>
@@ -226,31 +226,31 @@ export default function InquiryForm() {
 
               {/* Description */}
               <div className="space-y-2">
-                <label className="text-[10px] font-black uppercase tracking-widest text-secondary block">
+                <label className="text-[14px] font-bold uppercase tracking-widest text-secondary block">
                   Brief Description of Requirement
                 </label>
                 <textarea
                   name="description"
                   rows={4}
-                  placeholder="PLEASE PROVIDE HIGH-LEVEL DETAILS..."
+                  placeholder="Please provide high-level details..."
                   value={form.description}
                   onChange={handleChange}
-                  className={`w-full bg-surface-container border p-4 text-sm text-primary placeholder:text-secondary/40 focus:outline-none focus:ring-1 focus:ring-primary resize-none ${
+                  className={`w-full bg-surface-container border p-4 text-[16px] text-primary placeholder:text-secondary/60 focus:outline-none focus:ring-1 focus:ring-primary resize-none ${
                     errors.description ? 'border-red-400' : 'border-accent/30'
                   }`}
                 />
                 {errors.description && (
-                  <p className="text-[10px] text-red-500 uppercase tracking-widest">{errors.description}</p>
+                  <p className="text-[13px] text-red-500 font-semibold tracking-wide mt-1">{errors.description}</p>
                 )}
               </div>
 
               {/* Footer row */}
               <div className="flex flex-col md:flex-row items-center justify-between gap-8 pt-2">
-                <div className="flex items-start gap-3 text-[10px] text-secondary uppercase font-semibold leading-tight max-w-sm">
+                <div className="flex items-start gap-3 text-[14px] text-secondary font-semibold leading-relaxed max-w-sm">
                   <span
                     className="material-symbols-outlined text-primary flex-shrink-0 mt-0.5"
                     translate="no"
-                    style={{ fontSize: '16px', fontVariationSettings: "'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 16" }}
+                    style={{ fontSize: '18px', fontVariationSettings: "'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 18" }}
                   >
                     security
                   </span>
@@ -259,7 +259,7 @@ export default function InquiryForm() {
                 <button
                   type="submit"
                   disabled={status === 'submitting'}
-                  className="bg-primary text-white px-12 py-4 font-black uppercase tracking-widest text-[10px] md:text-xs hover:bg-accent hover:text-primary transition-colors w-full md:w-auto border border-primary disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                  className="bg-primary text-white px-12 py-4 font-black uppercase tracking-widest text-[14px] hover:bg-accent hover:text-primary transition-colors w-full md:w-auto border border-primary disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                 >
                   {status === 'submitting' ? (
                     <>
@@ -283,7 +283,7 @@ export default function InquiryForm() {
 function Field({ label, name, type, placeholder, value, onChange, error }) {
   return (
     <div className="space-y-2">
-      <label className="text-[10px] font-black uppercase tracking-widest text-secondary block">
+      <label className="text-[14px] font-bold uppercase tracking-widest text-secondary block">
         {label}
       </label>
       <input
@@ -292,12 +292,12 @@ function Field({ label, name, type, placeholder, value, onChange, error }) {
         placeholder={placeholder}
         value={value}
         onChange={onChange}
-        className={`w-full bg-surface-container border p-4 text-sm text-primary placeholder:text-secondary/40 focus:outline-none focus:ring-1 focus:ring-primary ${
+        className={`w-full bg-surface-container border p-4 text-[16px] text-primary placeholder:text-secondary/60 focus:outline-none focus:ring-1 focus:ring-primary ${
           error ? 'border-red-400' : 'border-accent/30'
         }`}
       />
       {error && (
-        <p className="text-[10px] text-red-500 uppercase tracking-widest">{error}</p>
+        <p className="text-[13px] text-red-500 font-semibold tracking-wide mt-1">{error}</p>
       )}
     </div>
   );
