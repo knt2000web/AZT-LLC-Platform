@@ -12,7 +12,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-screen-2xl mx-auto px-6 md:px-12 py-16 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-16 w-full items-center">
+      <div className="relative z-10 max-w-screen-2xl mx-auto px-6 md:px-12 py-12 md:py-16 grid grid-cols-1 md:grid-cols-2 gap-12 w-full items-center">
         <div className="space-y-8">
           {/* Kicker */}
           <p className="section-label">
@@ -33,7 +33,7 @@ export default function Hero() {
           </p>
 
           {/* Quote rule */}
-          <div className="border-l-4 border-accent pl-6 py-2">
+          <div className="border-l-4 border-accent pl-5 py-2">
             <p className="text-white text-sm md:text-base font-medium italic opacity-85 leading-relaxed">
               &ldquo;We don&apos;t just supply equipment; we assemble entire
               operational ecosystems into turnkey working solutions.&rdquo;
@@ -69,7 +69,7 @@ export default function Hero() {
               className="border border-accent/30 bg-white/5 backdrop-blur-sm p-8 text-right"
             >
               <p className="text-white text-5xl font-black tracking-tighter">{value}</p>
-              <p className="text-accent/92 text-[14px] uppercase tracking-widest font-bold mt-2 leading-snug">{label}</p>
+              <p className="text-accent/95 text-[15px] uppercase tracking-widest font-bold mt-2 leading-snug">{label}</p>
             </div>
           ))}
         </div>

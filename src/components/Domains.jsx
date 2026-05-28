@@ -33,18 +33,18 @@ const domains = [
 
 export default function Domains() {
   return (
-    <section id="capabilities" className="bg-surface-container py-16 md:py-24 border-t border-accent/20">
+    <section id="capabilities" className="bg-surface-container py-12 md:py-16 border-t border-accent/20">
       <div className="max-w-screen-2xl mx-auto px-6 md:px-12">
 
         {/* Header */}
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 gap-4">
           <div>
             <span className="section-label">Portfolios</span>
             <h2 className="text-3xl md:text-4xl font-black tracking-tighter text-primary">
               Core Capability Domains
             </h2>
           </div>
-          <a href="#capabilities" className="text-xs font-black uppercase border-b-2 border-primary pb-1 tracking-widest hover:text-primary/70 transition-colors">
+          <a href="#capabilities" className="text-[14px] font-black uppercase border-b-2 border-primary pb-1 tracking-widest hover:text-primary/70 transition-colors">
             All Capabilities
           </a>
         </div>
@@ -66,7 +66,7 @@ export default function Domains() {
               <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/60 to-transparent opacity-90" />
               <div className="absolute bottom-0 left-0 p-6 md:p-8 w-full">
                 <h3 className="text-white text-lg font-black uppercase mb-2 tracking-tight">{title}</h3>
-                <p className="text-white/90 text-xs leading-relaxed transform transition-all duration-300">
+                <p className="text-white/95 text-[15px] leading-relaxed transform transition-all duration-300">
                   {desc}
                 </p>
               </div>

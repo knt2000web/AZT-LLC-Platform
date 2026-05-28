@@ -27,9 +27,9 @@ const locations = [
 
 export default function GlobalReach() {
   return (
-    <section id="reach" className="bg-surface-container py-16 md:py-24 border-t border-accent/20">
+    <section id="reach" className="bg-surface-container py-12 md:py-16 border-t border-accent/20">
       <div className="max-w-screen-2xl mx-auto px-6 md:px-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-28 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 items-center">
 
           {/* Map visual */}
           <div className="order-2 lg:order-1 relative">
@@ -62,7 +62,7 @@ export default function GlobalReach() {
               Our partner network spans six continents, allowing us to navigate complex regulatory
               landscapes and provide on-the-ground support in the world's most demanding environments.
             </p>
-            <ul className="space-y-6">
+            <ul className="space-y-4">
               {locations.map(({ title, desc }) => (
                 <li key={title} className="flex items-start gap-5">
                   <span
@@ -73,8 +73,8 @@ export default function GlobalReach() {
                     location_on
                   </span>
                   <div>
-                    <h6 className="text-[10px] font-black uppercase tracking-widest text-primary">{title}</h6>
-                    <p className="text-xs text-secondary leading-relaxed mt-0.5">{desc}</p>
+                    <h6 className="text-[15px] font-black uppercase tracking-widest text-primary">{title}</h6>
+                    <p className="text-[15px] text-secondary leading-relaxed mt-0.5">{desc}</p>
                   </div>
                 </li>
               ))}

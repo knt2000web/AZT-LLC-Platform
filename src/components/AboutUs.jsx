@@ -30,17 +30,17 @@ const certs = [
 
 export default function AboutUs() {
   return (
-    <section id="about" className="bg-primary py-16 md:py-24">
+    <section id="about" className="bg-primary py-12 md:py-16">
       <div className="max-w-screen-2xl mx-auto px-6 md:px-12">
 
         {/* Section header */}
-        <div className="max-w-3xl mb-16">
+        <div className="max-w-3xl mb-10">
           <span className="section-label text-accent/70">Corporate Profile</span>
           <h2 className="text-3xl md:text-5xl font-black tracking-tighter text-white leading-tight mt-4 mb-6">
             Built for the World's<br />
             <span className="text-accent">Most Demanding Clients.</span>
           </h2>
-          <p className="text-accent/70 text-base md:text-lg leading-relaxed max-w-2xl">
+          <p className="text-accent/80 text-[16px] md:text-lg leading-relaxed max-w-2xl">
             AZT LLC is a U.S.-headquartered defense logistics and strategic solutions integrator.
             Incorporated in Florida and operating globally, we specialize in the design, procurement,
             and deployment of turnkey capability programs for government, military, and commercial clients
@@ -53,7 +53,7 @@ export default function AboutUs() {
 
           {/* Leadership pillars */}
           <div className="space-y-8">
-            <h3 className="text-[10px] font-black uppercase tracking-widest text-accent/60 mb-6">Our Operating Principles</h3>
+            <h3 className="text-[12px] font-black uppercase tracking-widest text-accent/60 mb-6">Our Operating Principles</h3>
             {pillars.map(({ icon, title, desc }) => (
               <div key={title} className="flex items-start gap-5">
                 <span
@@ -64,8 +64,8 @@ export default function AboutUs() {
                   {icon}
                 </span>
                 <div>
-                  <h4 className="text-white font-black text-sm uppercase tracking-widest mb-1">{title}</h4>
-                  <p className="text-accent/60 text-xs leading-relaxed">{desc}</p>
+                  <h4 className="text-white font-black text-[16px] uppercase tracking-widest mb-1">{title}</h4>
+                  <p className="text-accent/70 text-[16px] leading-relaxed">{desc}</p>
                 </div>
               </div>
             ))}
@@ -73,7 +73,7 @@ export default function AboutUs() {
 
           {/* Certifications + Compliance */}
           <div>
-            <h3 className="text-[10px] font-black uppercase tracking-widest text-accent/60 mb-6">Certifications &amp; Regulatory Standing</h3>
+            <h3 className="text-[12px] font-black uppercase tracking-widest text-accent/60 mb-6">Certifications &amp; Regulatory Standing</h3>
             <div className="space-y-4">
               {certs.map(({ label, detail }) => (
                 <div key={label} className="border border-accent/20 p-5 flex items-start gap-4 hover:border-accent/50 transition-colors">
@@ -85,8 +85,8 @@ export default function AboutUs() {
                     check_circle
                   </span>
                   <div>
-                    <p className="text-white font-black text-xs uppercase tracking-widest">{label}</p>
-                    <p className="text-accent/50 text-[11px] mt-0.5 leading-relaxed">{detail}</p>
+                    <p className="text-white font-black text-[14px] uppercase tracking-widest">{label}</p>
+                    <p className="text-accent/70 text-[14px] mt-0.5 leading-relaxed">{detail}</p>
                   </div>
                 </div>
               ))}
@@ -113,7 +113,7 @@ export default function AboutUs() {
           ].map(({ value, label }) => (
             <div key={label} className="text-center">
               <p className="text-white text-4xl md:text-5xl font-black tracking-tighter">{value}</p>
-              <p className="text-accent/50 text-[10px] uppercase tracking-widest font-semibold mt-2">{label}</p>
+              <p className="text-accent/60 text-[14px] uppercase tracking-widest font-semibold mt-2">{label}</p>
             </div>
           ))}
         </div>

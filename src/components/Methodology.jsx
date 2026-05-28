@@ -9,9 +9,9 @@ const steps = [
 
 export default function Methodology() {
   return (
-    <section id="execution-model" className="bg-white py-16 md:py-24 border-y border-accent/20">
+    <section id="execution-model" className="bg-white py-12 md:py-16 border-y border-accent/20">
       <div className="max-w-screen-2xl mx-auto px-6 md:px-12">
-        <div className="text-center mb-20">
+        <div className="text-center mb-12">
           <span className="section-label">Methodology</span>
           <h2 className="text-3xl md:text-4xl font-black tracking-tighter text-primary">
             Full-Cycle Execution Model
@@ -22,14 +22,14 @@ export default function Methodology() {
           {/* Timeline rule – desktop only */}
           <div className="absolute top-[24px] left-0 w-full h-px bg-accent/40 hidden lg:block" />
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-y-14 gap-x-6 relative z-10">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-y-10 gap-x-6 relative z-10">
             {steps.map(({ n, title, desc }) => (
               <div key={n} className="flex flex-col items-center text-center group">
-                <div className="w-12 h-12 bg-primary text-white flex items-center justify-center font-black text-sm mb-6 group-hover:bg-accent group-hover:text-primary transition-all duration-300">
+                <div className="w-12 h-12 bg-primary text-white flex items-center justify-center font-black text-[15px] mb-4 group-hover:bg-accent group-hover:text-primary transition-all duration-300">
                   {n}
                 </div>
-                <h4 className="font-black uppercase tracking-widest text-[10px] mb-3 text-primary">{title}</h4>
-                <p className="text-[11px] text-secondary leading-relaxed px-1">{desc}</p>
+                <h4 className="font-black uppercase tracking-widest text-[13px] mb-2 text-primary">{title}</h4>
+                <p className="text-[14px] text-secondary leading-relaxed px-1">{desc}</p>
               </div>
             ))}
           </div>
