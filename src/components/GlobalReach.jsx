@@ -44,9 +44,9 @@ export default function GlobalReach() {
             {/* Badge */}
             <div className="absolute -bottom-6 -right-2 md:-bottom-8 md:-right-6 bg-white p-6 md:p-8 shadow-2xl border-l-4 border-l-accent max-w-[220px]">
               <p className="font-black text-4xl text-primary mb-1">21</p>
-              <p className="text-[10px] md:text-xs uppercase tracking-widest text-accent font-black">Countries · 6 Regions</p>
+              <p className="text-[13px] uppercase tracking-widest text-accent font-black">Countries · 6 Regions</p>
               <div className="w-full h-px bg-accent/20 my-4" />
-              <p className="text-[10px] md:text-xs leading-relaxed text-secondary font-medium">
+              <p className="text-[14px] leading-relaxed text-secondary font-medium">
                 Verified commercial access across the Americas, Europe, Middle East, Africa, and Asia-Pacific.
               </p>
             </div>

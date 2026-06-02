@@ -29,7 +29,7 @@ export default function Footer() {
             <p className="text-[15px] leading-relaxed uppercase tracking-widest font-black text-white">
               AZT LLC
             </p>
-            <p className="text-[15px] leading-relaxed font-medium opacity-70">
+            <p className="text-[15px] leading-relaxed font-medium text-white/75">
               Strategic Solutions,<br />Powered by Global Expertise.
             </p>
           </div>
@@ -37,15 +37,32 @@ export default function Footer() {
           {/* HQ */}
           <div className="space-y-4">
             <h4 className="text-white text-[15px] font-black uppercase tracking-widest">U.S. Headquarters</h4>
-            <div className="text-[15px] space-y-2 font-medium leading-relaxed">
-              <p>2380 Diana Dr,<br />Hallandale Beach, FL 33009, USA</p>
+            <div className="space-y-2 leading-relaxed">
+              <p className="text-white/85 text-[15px] font-medium">2380 Diana Dr,<br />Hallandale Beach, FL 33009, USA</p>
               <p className="font-bold text-[16px] text-white">+1 (954) 683-9458</p>
-              <a
-                href="mailto:aztradingpower@outlook.com"
-                className="text-[15px] text-secondary hover:text-white transition-colors"
-              >
-                aztradingpower@outlook.com
-              </a>
+
+              {/* Primary emails — white, fully readable */}
+              <div className="space-y-1 pt-1">
+                <a
+                  href="mailto:fabiangiraldo@azt-llc.com"
+                  className="block text-[15px] text-white font-medium hover:text-accent transition-colors"
+                >
+                  fabiangiraldo@azt-llc.com
+                </a>
+                <a
+                  href="mailto:nsvedarsky@azt-llc.com"
+                  className="block text-[15px] text-white font-medium hover:text-accent transition-colors"
+                >
+                  nsvedarsky@azt-llc.com
+                </a>
+                {/* Legacy / backup email — softer tone as requested */}
+                <a
+                  href="mailto:aztradingpower@outlook.com"
+                  className="block text-[14px] text-accent/70 hover:text-white transition-colors mt-1"
+                >
+                  aztradingpower@outlook.com
+                </a>
+              </div>
             </div>
           </div>
 
@@ -54,7 +71,7 @@ export default function Footer() {
             <h4 className="text-white text-[15px] font-black uppercase tracking-widest">Certifications</h4>
             <ul className="text-[15px] space-y-2 font-medium">
               {certs.map((c) => (
-                <li key={c} className="flex items-center gap-2">
+                <li key={c} className="flex items-center gap-2 text-white/85">
                   <span
                     className="material-symbols-outlined text-accent flex-shrink-0"
                     translate="no"
@@ -74,10 +91,10 @@ export default function Footer() {
             <ul className="text-[15px] space-y-2.5 font-medium">
               {resources.map(({ label, href, note }) => (
                 <li key={label}>
-                  <a href={href} className="hover:text-white transition-colors block">
+                  <a href={href} className="text-white/85 hover:text-white transition-colors block">
                     {label}
                     {note && (
-                      <span className="block text-[14px] opacity-70 font-medium mt-0.5">{note}</span>
+                      <span className="block text-[14px] text-white/55 font-medium mt-0.5">{note}</span>
                     )}
                   </a>
                 </li>
@@ -89,10 +106,10 @@ export default function Footer() {
 
         {/* Legal bar */}
         <div className="border-t border-accent/20 pt-6 text-center space-y-1.5">
-          <p className="text-[14px] font-medium opacity-75">
+          <p className="text-[14px] font-medium text-white/70">
             &copy; {new Date().getFullYear()} AZT LLC. All Rights Reserved.
           </p>
-          <p className="text-[14px] font-medium opacity-60 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-[14px] font-medium text-white/55 max-w-2xl mx-auto leading-relaxed">
             All international programs are conducted in compliance with applicable U.S. and international trade regulations through licensed partners.
           </p>
         </div>
