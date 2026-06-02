@@ -82,7 +82,7 @@ export default function Gallery() {
               <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/50 transition-all duration-300 flex items-end p-3">
                 <span
                   className={`
-                    text-[9px] font-black uppercase tracking-widest px-2 py-1
+                    text-[12px] font-black uppercase tracking-widest px-2 py-1
                     opacity-0 group-hover:opacity-100 transition-opacity duration-300
                     ${CAT_COLORS[photo.cat] ?? 'bg-primary/80 text-accent'}
                   `}
@@ -95,7 +95,7 @@ export default function Gallery() {
         </div>
 
         {/* Caption */}
-        <p className="text-center text-[11px] text-secondary/40 uppercase tracking-widest mt-8">
+        <p className="text-center text-[13px] text-secondary/80 uppercase tracking-widest mt-8 font-medium">
           Proprietary operational photography — All rights reserved AZT LLC
         </p>
       </div>
@@ -134,7 +134,7 @@ export default function Gallery() {
               >
                 ← Prev
               </button>
-              <span className="text-white/30 text-xs self-center">
+              <span className="text-white/70 text-[13px] self-center font-medium">
                 {lightbox + 1} / {photos.length}
               </span>
               <button
