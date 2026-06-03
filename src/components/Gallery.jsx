@@ -53,7 +53,7 @@ export default function Gallery() {
           <span className="section-label">Operational Evidence</span>
           <h2 className="text-3xl md:text-5xl font-black tracking-tighter text-primary leading-tight mt-3 mb-4">
             Real Programs.<br />
-            <span className="text-accent">Real Results.</span>
+            <span className="text-primary">Real Results.</span>
           </h2>
           <p className="text-secondary text-base max-w-xl leading-relaxed">
             From defense exhibitions and maritime operations to energy logistics

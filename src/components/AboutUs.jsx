@@ -35,7 +35,7 @@ export default function AboutUs() {
 
         {/* Section header */}
         <div className="max-w-3xl mb-10">
-          <span className="section-label">Corporate Profile</span>
+          <span className="section-label !text-accent/90">Corporate Profile</span>
           <h2 className="text-3xl md:text-5xl font-black tracking-tighter text-white leading-tight mt-4 mb-6">
             Built for the World's<br />
             <span className="text-accent">Most Demanding Clients.</span>

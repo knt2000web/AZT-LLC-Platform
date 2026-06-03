@@ -15,7 +15,7 @@ export default function Hero() {
       <div className="relative z-10 max-w-screen-2xl mx-auto px-6 md:px-12 py-12 md:py-16 grid grid-cols-1 md:grid-cols-2 gap-12 w-full items-center">
         <div className="space-y-8">
           {/* Kicker */}
-          <p className="section-label">
+          <p className="section-label !text-white/90">
             AZT LLC — Integrated Defense Solutions
           </p>
 
