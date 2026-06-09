@@ -44,16 +44,16 @@ export default function Footer() {
               {/* Primary emails — white, fully readable */}
               <div className="space-y-1 pt-1">
                 <a
-                  href="mailto:fabiangiraldo@azt-llc.com"
+                  href="mailto:admin@azt-llc.com"
                   className="block text-[15px] text-white font-medium hover:text-accent transition-colors"
                 >
-                  fabiangiraldo@azt-llc.com
+                  admin@azt-llc.com
                 </a>
                 <a
-                  href="mailto:nsvedarsky@azt-llc.com"
+                  href="mailto:contact@azt-llc.com"
                   className="block text-[15px] text-white font-medium hover:text-accent transition-colors"
                 >
-                  nsvedarsky@azt-llc.com
+                  contact@azt-llc.com
                 </a>
                 {/* Legacy / backup email — softer tone as requested */}
                 <a
